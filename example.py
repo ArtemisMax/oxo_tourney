@@ -1,12 +1,13 @@
 from oxo_tourney import constants
 from oxo_tourney.player import RandomPlayer
 from oxo_tourney.tourney import Tourney
+from oxo_tourney.player import garbage_player
 
 
 def main():
     player_list = [
         RandomPlayer("Player 1"),
-        RandomPlayer("Player 2"),
+        garbage_player("Player 2"),
         RandomPlayer("Player 3"),
         RandomPlayer("Player 4"),
     ]
